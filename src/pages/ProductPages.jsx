@@ -1,16 +1,8 @@
-import { useEffect, useState } from "react";
-import { getAllProducts } from "../api";
 import ProductCard from "../components/ProductCard";
+import { useProduct } from "../hook";
 
 export default function ProductPages() {
-  const [product, setProduct] = useState([]);
-
-  useEffect(() => {
-    getAllProducts()
-      .then((data) => setProduct(data))
-      .catch((error) => console.log("[get all products error]", error));
-  }, []);
-
+  const { product } = useProduct();
   return (
     <main className="p-4 flex flex-col gap-8">
       <h1 className="text-2xl font-bold text-center">Products</h1>

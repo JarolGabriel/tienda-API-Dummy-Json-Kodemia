@@ -57,7 +57,7 @@ productos, iniciar sesión y ver detalles específicos de los productos.
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repo.git
+   git clone https://git@github.com:JarolGabriel/tienda-API-Dummy-Json-Kodemia.git
    ```
 2. Navega al directorio del proyecto:
    ```bash
